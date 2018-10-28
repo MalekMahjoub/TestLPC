@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,300');
+html,body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat' ,sans-serif;
+}
+
+/*TODO*/
+.pot-item{
+  background-image: url("../img/loading.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.content{
+  padding-left: 90px;
+  padding-right: 90px;
+  text-align: center;
+}
+.row{
+ width: 100%
+}
+.pot-name{
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+}
+.col{
+margin: 10px;
+width: 40%;
+height: 200px;
+display: inline-block;
+background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(45,45,45,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(45,45,45,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(45,45,45,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#2d2d2d',GradientType=0 ); /* IE6-9 */
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col"] {
+      width: 100%;
+  }
+}
